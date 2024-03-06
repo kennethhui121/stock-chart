@@ -32,7 +32,7 @@ function buildRow(line, start, isStart) {
 	} else {
 		date = start + parseInt(date, 10) * oneMin;
 	}
-	return `${date}	${open}	${high}	${low}	${close}	${volume}`;
+	return `${date}	${open}	${high}	${low}	${close} ${volume}`;
 }
 
 var target = `../docs/data/${ticker}_INTRA_DAY.tsv`;
